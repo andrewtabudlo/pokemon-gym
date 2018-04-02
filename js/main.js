@@ -32,4 +32,4 @@ function getPokemon(id, trainer){
 
 // get pokemon data
 // add your pokemon and trainer here to call your pokemon
-$.when(getPokemon(384, daenerys),getPokemon(149, daenerys),getPokemon(373, daenerys)getPokemon(18, jeddex),getPokemon(31, jeddex), getPokemon(24, jeddex)).done(render);
+$.when(getPokemon(384, daenerys),getPokemon(149, daenerys),getPokemon(373, daenerys),getPokemon(18, jeddex),getPokemon(31, jeddex), getPokemon(24, jeddex)).done(render);
