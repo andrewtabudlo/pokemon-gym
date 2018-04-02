@@ -1,5 +1,5 @@
 // create new trainer
-let daenerys = new Trainer();
+let urien = new Trainer();
 let mbison = new Trainer();
 // TODO do this for your trainer the same way
 
@@ -30,6 +30,10 @@ function getPokemon(id, trainer){
     });
 }
 
+function render() {
+	
+}
+
 // get pokemon data
 // add your pokemon and trainer here to call your pokemon
-$.when(getPokemon(384, daenerys),getPokemon(149, daenerys),getPokemon(373, daenerys),getPokemon(18, mbison),getPokemon(31, mbison), getPokemon(24, mbison)).done();
+$.when(getPokemon(384, urien),getPokemon(149, urien),getPokemon(373, urien),getPokemon(18, mbison),getPokemon(31, mbison), getPokemon(24, mbison)).done(render);
