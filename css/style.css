@@ -5,11 +5,22 @@
  *
  * Made By MaterializeCSS.com
  */
+
+.header {
+	position: absolute;
+	z-index: 100;
+}
+
+.progress {
+	position: absolute;
+	z-index: 100;
+}
+
  .navContainer {
    margin: 0 auto;
    width: 100%; }
  nav {
-   background-image: url("/images/navheader4.png");
+   background-image: url("../images/navheader4.png");
    height: 341px;
    width: 100%;
    background-color: white;
@@ -242,3 +253,7 @@ footer.page-footer {
 	width: 100px;
 	display: inline-block;
 }*/
+
+.grayscale {
+	filter: grayscale(100%);
+}
