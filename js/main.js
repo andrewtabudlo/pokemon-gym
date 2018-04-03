@@ -1,3 +1,5 @@
+
+
 // create new trainer
 let daenerys = new Trainer();
 let mbison = new Trainer();
