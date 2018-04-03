@@ -6,7 +6,7 @@ let mbison = new Trainer();
 // get json and extract data to objects, then place in respective trainers
 function getPokemon(id, trainer){
     return $.ajax({
-    url: `https://pokeapi.salestock.net/api/v2/pokemon/${id}/`,
+    url: `https://pokeapi.co/api/v2/pokemon/${id}/`,
     dataType: 'json',
     method: 'GET',
     })
