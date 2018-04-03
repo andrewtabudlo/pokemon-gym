@@ -44,7 +44,8 @@
 
    nav nav-wrapper {
      max-width: 1280px;
-     width: 90%; }
+     width: 90%;
+    }
    nav h1 {
      color: #FFCE00; }
    nav .brand-logo {
@@ -54,6 +55,7 @@
      position: absolute;
      left: 44%;
      margin-top: 80px;
+
 
     }
  @keyframes spin {
@@ -69,11 +71,11 @@
      color: #FFCE00; }
 
  .arc {
+
    position: relative;
    font-family:  sans-serif; }
    .arc li {
      float: left;
-     position: relative;
      list-style: none;
      width: 400px;
      height: 200px;
@@ -109,75 +111,83 @@
        width: 21px;
        height: 14px;
        left: 22.7px;
-       top: 99.95px; }
+       top: 99.95px;
+       color:#00963C;
+     }
      .arc #simple_arc .w1 {
        transform: rotate(-0.69rad);
        width: 34px;
        height: 24px;
        left: 50.63px;
-       top: 55.91px; }
+       top: 55.91px;
+       color: #00963C;
+
+     }
      .arc #simple_arc .w2 {
        transform: rotate(-0.55rad);
        width: 21px;
        height: 1px;
        left: 57.89px;
-       top: 38.25px; }
+       top: 38.25px;
+       color: #00963C;
+
+      }
      .arc #simple_arc .w3 {
        transform: rotate(-0.16rad);
        width: 13px;
        height: 5px;
        left: 104.79px;
        top: 17.58px;
-       color: #F40000; }
+       color: #00963C; }
      .arc #simple_arc .w4 {
        transform: rotate(0.05rad);
        width: 10px;
        height: 24px;
        left: 150.32px;
        top: 13.9px;
-       color: #F40000; }
+       color: #00963C; }
      .arc #simple_arc .w5 {
        transform: rotate(0.43rad);
        width: 15px;
        height: 14px;
        left: 174.07px;
        top: 16.42px;
-       color: #F40000; }
+       color: #00963C; }
      .arc #simple_arc .w6 {
        transform: rotate(0.5rad);
        width: 25px;
        height: 15px;
        left: 208.96px;
        top: 35.39px;
-       color: #F40000; }
+       color: #00963C; }
      .arc #simple_arc .w7 {
        transform: rotate(1.14rad);
        width: 25px;
        height: 15px;
        left: 274.96px;
        top: 87.39px;
-       color: #F40000; }
+       color: #00963C; }
      .arc #simple_arc .w8 {
        transform: rotate(1.70rad);
        width: 25px;
        height: 15px;
        left: 260.96px;
        top: 155.39px;
-       color: #F40000; }
+       color: #00963C; }
      .arc #simple_arc .w9 {
        transform: rotate(1.95rad);
        width: 25px;
        height: 4px;
        left: 255.96px;
        top: 215.39px;
-       color: #F40000; }
+       color: #00963C; }
      .arc #simple_arc .w10 {
        transform: rotate(2.40rad);
        width: 1px;
        height: 12px;
        left: 240.96px;
        top: 225.39px;
-       color: #F40000; }
+       color: #00963C; }
 
 p {
   line-height: 2rem;
@@ -210,6 +220,8 @@ p {
     top: 0;
   }
 }
+
+
 
 .icon-block {
   padding: 0 15px;
