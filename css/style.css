@@ -7,12 +7,16 @@
  */
  .navContainer {
    margin: 0 auto;
-   width: 100%; }
+   width: 100%;
+
+
+  }
  nav {
    background-image: url("../images/navheader4.png");
    height: 341px;
    width: 100%;
    background-color: white;
+
 
   }
 
@@ -44,7 +48,7 @@
 
  .arc {
    position: relative;
-   font-family: 'Orbitron', sans-serif; }
+   font-family:  sans-serif; }
    .arc li {
      float: left;
      position: relative;
