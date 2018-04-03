@@ -1,5 +1,3 @@
-
-
 // create new trainer
 // TODO do this for your trainer the same way
 let urien = new Trainer();
@@ -8,7 +6,7 @@ let mbison = new Trainer();
 // get json and extract data to objects, then place in respective trainers
 function getPokemon(id, trainer){
     return $.ajax({
-    url: `https://pokeapi.co/api/v2/pokemon/${id}/`,
+    url: `https://pokeapi.salestock.net/api/v2/pokemon/${id}/`,
     dataType: 'json',
     method: 'GET',
     })
@@ -35,9 +33,15 @@ function getPokemon(id, trainer){
 
 function render() {
 			// unlock scrolling
-			// $(document).unbind('scroll');
-			// $('body').css({'overflow':'visible'});
+			$(document).unbind('scroll');
+			$('body').css({'overflow':'visible'});
 			// place json data on page
+			// scale out loading bar
+			$('#loadingBar').addClass('hide');
+			$('#loadingText').addClass('hide');
+			// remove grayscale
+			$('#gymBackground').removeClass('grayscale');
+			// populate pokemon cards
       for (i = 0; i < mbison.pokemon.length; i++) {
         $('#pokemonPic' + (i+1)).attr('src',mbison.pokemon[i].image);
         $('#cardTitle' + (i+1)).html('#' + mbison.pokemon[i].id + ' ' + mbison.pokemon[i].name);
