@@ -34,6 +34,10 @@ function getPokemon(id, trainer){
 }
 
 function render() {
+			// unlock scrolling
+			// $(document).unbind('scroll');
+			// $('body').css({'overflow':'visible'});
+			// place json data on page
       for (i = 0; i < mbison.pokemon.length; i++) {
         $('#pokemonPic' + (i+1)).attr('src',mbison.pokemon[i].image);
         $('#cardTitle' + (i+1)).html('#' + mbison.pokemon[i].id + ' ' + mbison.pokemon[i].name);

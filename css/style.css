@@ -200,3 +200,45 @@ margin-top: -100px;
 footer.page-footer {
   margin: 0;
 }
+
+/* nav {
+  background-image: url("/images/navheader3.png");
+  height: 100px;
+  margin-bottom: 100px; } */
+  nav nav-wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+
+
+   }
+  nav h1 {
+    color: #FFCE00; }
+  nav .brand-logo {
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    animation: spin 1000ms linear infinite, moveLeftToRight 3s forwards;
+    position: absolute;
+    left: 0;
+
+   }
+
+  nav h1 {
+    margin-top: 25px;
+    text-align: center;
+    color: #FFCE00; }
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-360deg); } }
+
+/* badge size */
+/*#badge {
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+}*/
