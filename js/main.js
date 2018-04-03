@@ -31,33 +31,26 @@ function getPokemon(id, trainer){
     });
 }
 
-function render(trainer) {
-    if (trainer == mbison) { 
-      for (i = 0; i < trainer.pokemon.length; i++) {
-        $('#pokemonPic' + (i+1)).attr('src',trainer.pokemon[i].image);
-        $('#cardTitle' + (i+1)).html('#' + trainer.pokemon[i].id + ' ' + trainer.pokemon[i].name);
-        $('#statsList' + (i+1)).html(`<li class='collection-item'>HP: ${trainer.pokemon[i].hp}</li><li class='collection-item'>Attack: ${trainer.pokemon[i].attack}</li><li class='collection-item'>Defense: ${trainer.pokemon[i].defense}</li>`);
-        trainer.pokemon[i].abilities.forEach(function(ability) {
+function render() {
+      for (i = 0; i < mbison.pokemon.length; i++) {
+        $('#pokemonPic' + (i+1)).attr('src',mbison.pokemon[i].image);
+        $('#cardTitle' + (i+1)).html('#' + mbison.pokemon[i].id + ' ' + mbison.pokemon[i].name);
+        $('#statsList' + (i+1)).html(`<li class='collection-item'>HP: ${mbison.pokemon[i].hp}</li><li class='collection-item'>Attack: ${mbison.pokemon[i].attack}</li><li class='collection-item'>Defense: ${mbison.pokemon[i].defense}</li>`);
+        mbison.pokemon[i].abilities.forEach(function(ability) {
           $('#abilitiesList' + (i+1)).append(`<li class='collection-item'>${ability}</li>`);
         });
-        $('#miscList' + (i+1)).html(`<li class='collection-item'>Height: ${trainer.pokemon[i].height}</li><li class='collection-item'>Weight: ${trainer.pokemon[i].weight}</li>`);
-    }
-      } else if (trainer == urien) {
-      for (i = 3; i < (trainer.pokemon.length - 3); i++) {
-        $('#pokemonPic' + i).attr('src',trainer.pokemon[(i-3)].image);
-        $('#cardTitle' + i).html('#' + trainer.pokemon[(i-3)].id + ' ' + trainer.pokemon[(i-3)].name);
-        $('#statsList' + i).html(`<li class='collection-item'>HP: ${trainer.pokemon[(i-3)].hp}</li>`);
-        trainer.pokemon[(i-3)].abilities.forEach(function(ability) {
-          $('#abilitiesList' + i).append(`<li class='collection-item'>${ability}</li>`);
+        $('#miscList' + (i+1)).html(`<li class='collection-item'>Height: ${mbison.pokemon[i].height}</li><li class='collection-item'>Weight: ${mbison.pokemon[i].weight}</li>`);}
+      for (i = 0; i < urien.pokemon.length; i++) {
+        $('#pokemonPic' + (i+4)).attr('src',urien.pokemon[i].image);
+        $('#cardTitle' + (i+4)).html('#' + urien.pokemon[i].id + ' ' + urien.pokemon[i].name);
+        $('#statsList' + (i+4)).html(`<li class='collection-item'>HP: ${urien.pokemon[i].hp}</li><li class='collection-item'>Attack: ${mbison.pokemon[i].attack}</li><li class='collection-item'>Defense: ${mbison.pokemon[i].defense}</li>`);
+        urien.pokemon[i].abilities.forEach(function(ability) {
+          $('#abilitiesList' + (i+4)).append(`<li class='collection-item'>${ability}</li>`);
         });
-        $('#miscList' + i).html(`<li class='collection-item'>Height: ${trainer.pokemon[(i-3)].height}</li><li class='collection-item'>Weight: ${trainer.pokemon[(i-3)].weight}</li>`);
-    }
-      } else {
-      console.log('something went wrong');
-  } 
+        $('#miscList' + (i+4)).html(`<li class='collection-item'>Height: ${urien.pokemon[i].height}</li><li class='collection-item'>Weight: ${urien.pokemon[i].weight}</li>`);}
 }
 
 
 // get pokemon data
 // add your pokemon and trainer here to call your pokemon
-$.when(getPokemon(384, urien),getPokemon(149, urien),getPokemon(373, urien),getPokemon(18, mbison),getPokemon(31, mbison), getPokemon(24, mbison)).done(render(mbison),render(urien));
+$.when(getPokemon(18, mbison),getPokemon(31, mbison), getPokemon(24, mbison),getPokemon(384, urien),getPokemon(149, urien),getPokemon(373, urien)).done(render);
