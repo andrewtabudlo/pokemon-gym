@@ -1,3 +1,5 @@
+
+
 // create new trainer
 // TODO do this for your trainer the same way
 let urien = new Trainer();

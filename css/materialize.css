@@ -2627,9 +2627,9 @@ ul li {
   box-shadow: none !important;
 }
 
-.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+/* .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
+} */
 
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -2797,7 +2797,9 @@ video.responsive-video {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 500px;
+  height: 400px;
+  margin-top: 30px;
+
 }
 
 .parallax {
@@ -2806,7 +2808,10 @@ video.responsive-video {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
+  /* z-index: -1; */
+  height: 650px;
+
+
 }
 
 .parallax img {
@@ -2816,6 +2821,10 @@ video.responsive-video {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  margin-top: 100px;
+
+
+
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-transform: translateX(-50%);
@@ -6690,6 +6699,7 @@ nav ul a span.badge {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+
 }
 
 .row:after {
@@ -7325,7 +7335,7 @@ nav i.material-icons {
 
 nav .nav-wrapper {
   position: relative;
-  height: 100%;
+  
 }
 
 @media only screen and (min-width: 993px) {
@@ -7357,14 +7367,13 @@ nav .brand-logo {
 }
 
 nav .brand-logo.center {
-  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
 @media only screen and (max-width: 992px) {
   nav .brand-logo {
-    left: 50%;
+    left: 45%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }

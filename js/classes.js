@@ -2,7 +2,7 @@ class Trainer {
   constructor(pokemon) {
     this.pokemon = [];
   }
-  
+
   addPokemon(x) {
     this.pokemon.push(x);
       }
