@@ -5,27 +5,160 @@
  *
  * Made By MaterializeCSS.com
  */
+ .navContainer {
+   margin: 0 auto;
+   width: 100%; }
+ nav {
+   background-image: url("/images/navheader4.png");
+   height: 341px;
+   width: 100%;
+   background-color: white;
 
-nav ul a,
-nav .brand-logo1 {
-  color: #ede7f6;
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  }
 
+   nav nav-wrapper {
+     margin: 0 auto;
+     max-width: 1280px;
+     width: 90%; }
+   nav h1 {
+     color: #FFCE00; }
+   nav .brand-logo {
+     display: block;
+     border-radius: 50%;
+     animation: spin 1000ms linear infinite, moveLeftToRight 3s forwards;
+     position: absolute;
+     left: 44%;
+     margin-top: 80px;
 
+    }
+ @keyframes spin {
+   from {
+     transform: rotate(0deg); }
+   to {
+     transform: rotate(360deg); } }
 
+   nav h1 {
+     margin-top: 25px;
+     text-align: center;
+     animation: fadein 7s;
+     color: #FFCE00; }
 
-}
+ .arc {
+   position: relative;
+   font-family: 'Orbitron', sans-serif; }
+   .arc li {
+     float: left;
+     position: relative;
+     list-style: none;
+     width: 400px;
+     height: 200px;
+     padding: 40px;
+     position: absolute;
+     top: 80%;
+     left: 50%;
+     margin: 25px 0 0 -150px;
+     animation: spin 4000ms linear infinite; }
+ @keyframes spin {
+   from {
+     transform: rotate(0deg); }
+   to {
+     transform: rotate(-360deg); } }
+   .arc #simple_arc {
+     display: block;
+     width: 306px;
+     height: 305px; }
+     .arc #simple_arc span[class^=w]:nth-of-type(n+0) {
+       display: block;
+       position: absolute;
+       transform-origin: 50% 100%; }
+     .arc #simple_arc span {
+       font-size: 48px;
+       font-weight: regular;
+       font-style: normal;
+       line-height: .15;
+       white-space: pre;
+       overflow: visible;
+       padding: 0px; }
+     .arc #simple_arc .w0 {
+       transform: rotate(-1.14rad);
+       width: 21px;
+       height: 14px;
+       left: 22.7px;
+       top: 99.95px; }
+     .arc #simple_arc .w1 {
+       transform: rotate(-0.69rad);
+       width: 34px;
+       height: 24px;
+       left: 50.63px;
+       top: 55.91px; }
+     .arc #simple_arc .w2 {
+       transform: rotate(-0.55rad);
+       width: 21px;
+       height: 1px;
+       left: 57.89px;
+       top: 38.25px; }
+     .arc #simple_arc .w3 {
+       transform: rotate(-0.16rad);
+       width: 13px;
+       height: 5px;
+       left: 104.79px;
+       top: 17.58px;
+       color: #F40000; }
+     .arc #simple_arc .w4 {
+       transform: rotate(0.05rad);
+       width: 10px;
+       height: 24px;
+       left: 150.32px;
+       top: 13.9px;
+       color: #F40000; }
+     .arc #simple_arc .w5 {
+       transform: rotate(0.43rad);
+       width: 15px;
+       height: 14px;
+       left: 174.07px;
+       top: 16.42px;
+       color: #F40000; }
+     .arc #simple_arc .w6 {
+       transform: rotate(0.5rad);
+       width: 25px;
+       height: 15px;
+       left: 208.96px;
+       top: 35.39px;
+       color: #F40000; }
+     .arc #simple_arc .w7 {
+       transform: rotate(1.14rad);
+       width: 25px;
+       height: 15px;
+       left: 274.96px;
+       top: 87.39px;
+       color: #F40000; }
+     .arc #simple_arc .w8 {
+       transform: rotate(1.70rad);
+       width: 25px;
+       height: 15px;
+       left: 260.96px;
+       top: 155.39px;
+       color: #F40000; }
+     .arc #simple_arc .w9 {
+       transform: rotate(1.95rad);
+       width: 25px;
+       height: 4px;
+       left: 255.96px;
+       top: 215.39px;
+       color: #F40000; }
+     .arc #simple_arc .w10 {
+       transform: rotate(2.40rad);
+       width: 1px;
+       height: 12px;
+       left: 240.96px;
+       top: 225.39px;
+       color: #F40000; }
 
 p {
   line-height: 2rem;
 }
 
-.button-collapse {
-  color: #26a69a;
-}
+
 
 .parallax-container {
   min-height: 650px;
@@ -60,6 +193,10 @@ p {
   font-size: inherit;
 }
 
+.white {
+margin-top: -100px;
+
+}
 footer.page-footer {
   margin: 0;
 }
