@@ -1,3 +1,37 @@
+class Trainer {
+  constructor(pokemon) {
+    this.pokemon = [];
+  }
+
+  addPokemon(x) {
+    this.pokemon.push(x);
+      }
+  all() {
+    return this.pokemon;
+  }
+  get(key) {
+    for (let i = 0; i < this.pokemon.length; i++) {
+      if (this.pokemon[i].name === key) {
+        return this.pokemon[i];
+      }
+    }
+  }
+}
+
+class Pokemon {
+  constructor(id,name,image,type,weight,height,hp,attack,defense,abilities) {
+    this.id = id;
+    this.name = name;
+    this.image = image;
+    this.type = type;
+    this.weight = weight;
+    this.height = height;
+    this.hp = hp;
+    this.attack = attack;
+    this.defense = defense;
+    this.abilities = abilities;
+}
+
 // create new trainer
 // TODO do this for your trainer the same way
 let urien = new Trainer();
@@ -60,6 +94,11 @@ function render() {
         $('#miscList' + (i+4)).html(`<li class='collection-item'>Height: ${urien.pokemon[i].height}</li><li class='collection-item'>Weight: ${urien.pokemon[i].weight}</li>`);}
 }
 
+// lock screen before json data is loaded
+$('body').css({'overflow':'hidden'});
+$(document).bind('scroll',function() {
+  window.scrollTo(0,0);
+}); 
 
 // get pokemon data
 // add your pokemon and trainer here to call your pokemon
